@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+.item1 {
+  grid-area: cover;
+  background: url(https://m.dw.com/image/48396304_101.jpg) no-repeat; width:100%;
+  background-size: cover;
+  border: solid black 1px;
+}
+
+.item2 {
+    grid-area: name;
+
+    text-align: center;
+}
+
+.item3 {
+    grid-area: navbar;
+
+    border: solid black 1px;
+}
+
+.item4 {
+    grid-area: info;
+    border-radius: 2.5%;
+    padding: 15px;
+
+    border: solid black 1px;
+}
+.item5 {
+    grid-area: post;
+    border-radius: 2.5%;
+
+    border: solid black 1px;
+}
+.item6 {
+    grid-area: photos;
+    border-radius: 2.5%;
+    padding: 15px;
+
+    border: solid black 1px;
+}
+.item7 {
+    grid-area: friends;
+    border-radius: 2.5%;
+    padding: 100px;
+
+    border: solid black 1px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 0fr 0fr 0fr 0.84fr;
+  grid-template-columns: 1fr 1fr 0fr 2fr 4fr;
+  grid-template-areas:
+  'cover cover cover cover cover'
+  'name name name name name'
+  'navbar navbar navbar navbar navbar'
+  'info info post post post'
+  'photos photos post post post'
+  'friends friends post post post';
+  grid-gap: 10px;
+  padding: 40px;
+  padding-right: 400px;
+  padding-left: 400px;
+}
+
+.profilepic{
+  border-radius: 50%;
+  border: solid black 4px;
+  position: absolute;
+  left: 45%;
+  right: 45%;
+  width: 10%;
+  top: 30%;
+}
+
+li{
+    text-align: left;
+    display: inline-block;
+    padding: 20px;
+}
+
+li:hover {
+  background-color: grey;
+}
+
+.allPhotos{
+  float:right;
+}
+figure {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end:  0px;
+}
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-gap: 1%;
+      }
+
+      .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+      }
+
+      .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+      }
+
+      .gallery__item--2 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery__item--3 {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+      .gallery__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 6;
+      }
+
+      .gallery__item--5 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 6;
+      }
+
+      .gallery__item--6 {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 6;
+      }
+      .gallery__item--7 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+        grid-row-end: 9;
+      }
+
+      .gallery__item--8 {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 6;
+        grid-row-end: 9;
+      }
+
+      .gallery__item--9 {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 6;
+        grid-row-end: 9;
+      }
