@@ -1,8 +1,11 @@
 * {
   box-sizing: border-box;
 }
+b{
+  text-align: center;
+}
 .item1 {
-  grid-area: cover;
+  grid-area: backround;
   background: url(https://m.dw.com/image/48396304_101.jpg) no-repeat; width:100%;
   background-size: cover;
   border: solid black 1px;
@@ -16,35 +19,30 @@
 
 .item3 {
     grid-area: navbar;
-
     border: solid black 1px;
 }
 
 .item4 {
     grid-area: info;
     border-radius: 2.5%;
-    padding: 15px;
-
+    padding: 10%;
     border: solid black 1px;
 }
 .item5 {
     grid-area: post;
     border-radius: 2.5%;
-
     border: solid black 1px;
 }
 .item6 {
     grid-area: photos;
     border-radius: 2.5%;
-    padding: 15px;
-
+    padding: 6%;
     border: solid black 1px;
 }
 .item7 {
     grid-area: friends;
     border-radius: 2.5%;
-    padding: 100px;
-
+    padding: 50%;
     border: solid black 1px;
 }
 
@@ -54,7 +52,7 @@
   grid-template-rows: 1fr 0fr 0fr 0fr 0.84fr;
   grid-template-columns: 1fr 1fr 0fr 2fr 4fr;
   grid-template-areas:
-  'cover cover cover cover cover'
+  'backround backround backround backround backround'
   'name name name name name'
   'navbar navbar navbar navbar navbar'
   'info info post post post'
@@ -109,7 +107,7 @@ figure {
 
       }
 
-      .gallery__item--1 {
+      .gallery1 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -117,55 +115,55 @@ figure {
 
       }
 
-      .gallery__item--2 {
+      .gallery2 {
         grid-column-start: 3;
         grid-column-end: 6;
         grid-row-start: 1;
         grid-row-end: 3;
       }
 
-      .gallery__item--3 {
+      .gallery3 {
         grid-column-start: 6;
         grid-column-end: 9;
         grid-row-start: 1;
         grid-row-end: 3;
       }
 
-      .gallery__item--4 {
+      .gallery4{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 3;
         grid-row-end: 6;
       }
 
-      .gallery__item--5 {
+      .gallery5 {
         grid-column-start: 3;
         grid-column-end: 6;
         grid-row-start: 3;
         grid-row-end: 6;
       }
 
-      .gallery__item--6 {
+      .gallery6{
         grid-column-start: 6;
         grid-column-end: 9;
         grid-row-start: 3;
         grid-row-end: 6;
       }
-      .gallery__item--7 {
+      .gallery7{
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 6;
         grid-row-end: 9;
       }
 
-      .gallery__item--8 {
+      .gallery8 {
         grid-column-start: 3;
         grid-column-end: 6;
         grid-row-start: 6;
         grid-row-end: 9;
       }
 
-      .gallery__item--9 {
+      .gallery9 {
         grid-column-start: 6;
         grid-column-end: 9;
         grid-row-start: 6;
